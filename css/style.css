@@ -6,8 +6,8 @@
   --primaryHoverColor: #e0e0e0;
   --secondaryColor: #aaaaaa;
   --baseColor: #000000;
-  --baseFont: 'Archivo Narrow';
-  --titleFont: 'Archivo Narrow';
+  --baseFont: 'Helvetica';
+  --titleFont: 'Helvetica';
   --regular: 400;
   --medium: 500;
   --bold: 700;
@@ -73,7 +73,8 @@ a, .btn {
 }
 .btnOutline {
 	border: 1px solid var(--primaryDarkColor);
-	color: var(--primaryDarkColor);
+	color: black;
+  border-radius: 6px;
 }
 .btnOutline:hover {
 	border: 1px solid var(--primaryDarkColor);
@@ -294,7 +295,7 @@ a, .btn {
   padding: 80px 0;
 }
 .sectionSpaceSm {
-  padding: 35px 0;
+  padding: 80px 0;
 }
 .ksText {
 	display: block;
@@ -345,10 +346,21 @@ a, .btn {
 .cardStyle1 {
 	padding: 25px;
 	background-color: var(--bs-white);
-	border-radius: 4px;
+  border: 1px solid #fff;
+	border-radius: 6px;
   height: 100%;
 }
 .cardStyle1 > p:last-child {
+	margin-bottom: 0;
+}
+.cardStyle2 {
+	padding: 25px;
+	background-color: var(--bs-white);
+  border: 1px solid #ccc;
+	border-radius: 6px;
+  height: 100%;
+}
+.cardStyle2 > p:last-child {
 	margin-bottom: 0;
 }
 .cs1Title {
@@ -395,6 +407,7 @@ a, .btn {
 }
 .portfolioImgCol img {
   border-radius: 6px;
+  border: 1px solid #ddd;
   width: 246px;
   height: 184px;
   -o-object-fit: cover;
@@ -742,6 +755,9 @@ body.navToggleActive {
   .cardStyle1 {
   	padding: 15px;
   }
+  .cardStyle2 {
+  	padding: 15px;
+  }
   .btn {
   	font-size: 14px;
   }
@@ -772,4 +788,98 @@ input[type=text], input[type=email], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical
+}
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  flex-direction: row;
+  border: 1px solid #ccc;
+  /* background-color: #f1f1f1; */
+  width: 20%;
+  height: 194px;
+  border-radius: 6px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  float: left;
+  background-color: inherit;
+  color: black;
+  padding: 15px 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bla {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #eee;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  margin-left: 180px;
+  margin-top: -194px;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: none;
+  height: 194px;
+}
+
+/* Style the tab */
+.tab2 {
+  flex-direction: row;
+  border: 1px solid #ccc;
+  width: 20%;
+  height: 194px;
+  border-radius: 6px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab2 button {
+  float: left;
+  background-color: inherit;
+  color: black;
+  padding: 15px 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #eee;
+}
+
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  margin-left: 180px;
+  margin-top: -194px;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: none;
+  height: 194px;
 }
