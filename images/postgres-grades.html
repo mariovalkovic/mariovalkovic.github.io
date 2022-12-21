@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PG4E - Postgres for Everybody</title>
+<script>
+ var _TSUGI = {
+            context_title: "Postgres for Everybody",
+            ajax_session: false,
+heartbeat: 1500000,
+heartbeat_url: "https://www.pg4e.com/tsugi/util/heartbeat?msec=1500000",
+rest_path: {"parent":"","base_url":"https:\/\/www.pg4e.com","controller":"assignments","extra":"","action":false,"parameters":[],"current":"\/assignments","full":"\/assignments"},
+spinnerUrl: "https://static.tsugi.org/img/spinner.gif",
+staticroot: "https://static.tsugi.org",
+apphome: "https://www.pg4e.com",
+wwwroot: "https://www.pg4e.com/tsugi",
+websocket_url: false,
+websocket_token: false,
+react_token: "9nv33s8i4933dad8udsvvo4jjo",
+window_close_message: "Application complete - You can close this tab.",
+session_expire_message: "Your session has expired"
+
+}
+</script>
+        <!-- Tiny bit of JS -->
+        <script src="https://static.tsugi.org/js/tsugiscripts_head.js"></script>
+        <!-- Le styles -->
+        <link href="https://static.tsugi.org/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://static.tsugi.org/js/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
+                <link href="https://static.tsugi.org/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
+        <link href="https://static.tsugi.org/fontawesome-free-5.8.2-web/css/v4-shims.css" rel="stylesheet">
+        <style>:root {--primary:#336791;
+--primary-menu:#336791;
+--primary-border:#306087;
+--primary-darker:#2e5d83;
+--primary-darkest:#2b5578;
+--background-color:#FFFFFF;
+--secondary:#EEEEEE;
+--secondary-menu:#EEEEEE;
+--text:#111111;
+--text-light:#5E5E5E;
+--font-family:'Open Sans', Corbel, Avenir, 'Lucida Grande', 'Lucida Sans', sans-serif;
+--font-size:14px;
+}</style>
+          <link href="https://static.tsugi.org/css/tsugi2.css" rel="stylesheet">
+
+          <style>
+                        </style>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="http://localhost/tsugi/vendor/tsugi/lib/static/js/html5shiv/html5shiv.js"></script>
+          <script src="http://localhost/tsugi/vendor/tsugi/lib/static/js/respond/respond.min.js"></script>
+        <![endif]-->
+
+    <script type="text/javascript">CSRF_TOKEN = "TODORemoveThis";</script>
+</head>
+<body prefix="oer: http://oerschema.org">
+<div id="body_container">
+<script>
+if (window!=window.top) {
+    document.getElementById("body_container").className = "container-fluid";
+} else {
+    document.getElementById("body_container").className = "container";
+}
+</script>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="tsugi_main_nav_bar" style="display:none">  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.pg4e.com">PG4E</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-main">
+        <li><a href="https://www.pg4e.com/lessons" >Lessons</a></li>
+        <li><a href="https://www.pg4e.com/discussions" >Discussions</a></li>
+        <li><a href="https://www.pg4e.com/assignments" >My Progress</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://online.dr-chuck.com" target="_blank" >Instructor</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-img" data-toggle="dropdown"><img src="https://lh3.googleusercontent.com/a/AEdFTp68zr_z8WNeYnmWTsTR-0V0LO2mq--jVLQoNJUw=s96-c" title="User Profile Menu - Includes logout" style="height: 2em;"/> <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.pg4e.com/profile" >Profile</a></li>
+            <li><a href="https://www.pg4e.com/map" >Map</a></li>
+            <li><a href="https://www.pg4e.com/privacy" >Privacy</a></li>
+            <li><a href="https://www.pg4e.com/tsugi/settings" >LMS Integration</a></li>
+            <li><a href="https://www.tsugicloud.org" target="_blank" >Free App Store</a></li>
+            <li><a href="https://www.pg4e.com/tsugi/dev" >Test LTI Tools</a></li>
+            <li><a href="https://www.pg4e.com/tsugi/store" >Test Tools</a></li>
+            <li><a href="https://www.pg4e.com/logout" >Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> <!--/.nav-collapse -->
+  </div> <!--container -->
+</nav>
+<script>
+if ( ! inIframe() ) {
+  document.getElementById('tsugi_main_nav_bar').style.display = 'block';
+  document.getElementsByTagName('body')[0].style.paddingTop = '5.93rem';
+} else {
+  document.getElementsByTagName('body')[0].style.paddingTop = '1.0rem';
+}
+</script>
+<div id="flashmessages"></div><h1>PostgreSQL for Everybody (PG4E)</h1>
+<p>Grades for: M&aacute;rio Valkovič valkovicmario1@gmail.com | b51d0</p>
+<table class="table table-striped table-hover "><tbody>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week1">
+Single Table SQL</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: Single Table SQL</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Initial Database Setup</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Making our first tables</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Inserting some data into a table</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Serial Fields / Auto Increment</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Musical Track Database</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week2">
+Data Relationships</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: Data Relationships</td>
+<td>Score: 92.8571</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Entering Many-to-One Data - Automobiles</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Building a many-to-many roster</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week3">
+SQL Techniques</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: SQL Techniques</td>
+<td>Score: 86.6667</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Musical Tracks Many-to-One</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Unesco Heritage Sites Many-to-One</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Musical Track Database plus Artists</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week4">
+Text in PostgreSQL</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: Text in PostgreSQL</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Creating a Stored Procedure</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Regular Expressions</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Generating Text</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Puzzle: Break a Hashing Function</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week5">
+Natural Language</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: Natural Language</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Inverted Index in SQL</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Reverse Index (with stop words) in SQL</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: String Array GIN Index</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: GIN ts_vector Index</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week6a">
+Python and PostgreSQL</td></tr><tr><td class="info" colspan="3">
+<a href="/lessons/week6b">
+JSON and PostgreSQL</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: JSON in PostgreSQL</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Loading JSON from PokéAPI</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week7">
+Database Architectures</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Quiz: Database Architecture</td>
+<td>Score: 100</td></tr>
+<tr><td class="info" colspan="3">
+<a href="/lessons/week7a">
+Elastic Search</td></tr><tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Elasticsearch Book Load</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Elasticsearch Email Load</td>
+<td>Score: 100</td></tr>
+<tr><td><i class="fa fa-check-square-o text-success" aria-hidden="true" style="label label-success; padding-right: 5px;"></i></td><td>Autograder: Elasticsearch Tweets</td>
+<td>Score: 100</td></tr>
+</tbody></table>
+<script src="https://static.tsugi.org/js/jquery-1.11.3.js"></script>
+<script src="https://static.tsugi.org/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="https://static.tsugi.org/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+<script src="https://static.tsugi.org/js/jquery.timeago-1.6.3.js"></script>
+<script src="https://static.tsugi.org/js/handlebars-v4.0.2.js"></script>
+<script src="https://static.tsugi.org/tmpljs-3.8.0/tmpl.min.js"></script>
+<script src="https://static.tsugi.org/js/tsugiscripts.js"></script>
+<script type="text/javascript">
+    HEARTBEAT_TIMEOUT = setTimeout(doHeartBeat, _TSUGI.heartbeat);
+    tsugiEmbedMenu();
+    $(document).ready(function() { jQuery("time.timeago").timeago(); });
+</script>
+
+<p style="font-size: 75%; margin-top: 5em;">
+Copyright Creative Commons Attribution 3.0
+</p><script>
+$('a').each(function (x) {
+    var href = $(this).attr('href');
+    if ( ! href ) return;
+    if ( ! href.startsWith('#') ) return;
+    var pos = href.indexOf('/?');
+    if ( pos < 1 ) return;
+    // console.dir('Patching broken # href='+href);
+    href = href.substring(0,pos);
+    $(this).attr('href', href);
+});
+
+</script>
+
+</div></body>
+</html>
