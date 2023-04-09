@@ -17,13 +17,13 @@
             "mesh" : 0,
             "name" : "Cube",
             "scale" : [
-                1,
-                10,
+                5,
+                5,
                 1
             ],
             "translation" : [
                 0,
-                10,
+                5,
                 0
             ]
         }
